@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/BaseMapQuery/target/classes" />
+    <output-test url="file://$MODULE_DIR$/BaseMapQuery/target/test-classes" />
+    <content url="file://$MODULE_DIR$/BaseMapQuery">
+      <sourceFolder url="file://$MODULE_DIR$/BaseMapQuery/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/BaseMapQuery/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.vividsolutions:jts:1.13" level="project" />
+    <orderEntry type="module" module-name="search-lm-rmi" />
+    <orderEntry type="library" name="Maven: com.nordicpeak.flowengine:flowengine:1.0.0" level="project" />
+  </component>
+</module>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/basemapquery.iml" filepath="$PROJECT_DIR$/basemapquery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cron4jutils.iml" filepath="$PROJECT_DIR$/cron4jutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo.oeplatform.org.iml" filepath="$PROJECT_DIR$/demo.oeplatform.org.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flowengine.iml" filepath="$PROJECT_DIR$/flowengine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ivis-oeplatform-client.iml" filepath="$PROJECT_DIR$/ivis-oeplatform-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oeplatform.iml" filepath="$PROJECT_DIR$/oeplatform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/search-lm-rmi.iml" filepath="$PROJECT_DIR$/search-lm-rmi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/siteprofile.iml" filepath="$PROJECT_DIR$/siteprofile.iml" />
+    </modules>
+  </component>
+</project>

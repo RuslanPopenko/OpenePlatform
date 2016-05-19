@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="demo.oeplatform.org:war">
+    <output-path>$PROJECT_DIR$/demo.oeplatform.org/target</output-path>
+    <root id="archive" name="demo.oeplatform.org-1.2.1.war">
+      <element id="artifact" artifact-name="demo.oeplatform.org:war exploded" />
+    </root>
+  </artifact>
+</component>
