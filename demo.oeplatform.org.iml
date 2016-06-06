@@ -85,7 +85,7 @@
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.35" level="project" />
     <orderEntry type="module" module-name="siteprofile" />
     <orderEntry type="module" module-name="ivis-oeplatform-client" />
-    <orderEntry type="library" name="Maven: com.imcode.ivis:ivis-core:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.imcode.ivis:ivis-core:1.0.1-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security.oauth:spring-security-oauth2:2.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" level="project" />
@@ -120,7 +120,7 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.4.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.4" level="project" />
-    <orderEntry type="library" name="Maven: com.imcode.ivis:ivis-sdk:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.imcode.ivis:ivis-sdk:1.0.1-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.3.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.3" level="project" />

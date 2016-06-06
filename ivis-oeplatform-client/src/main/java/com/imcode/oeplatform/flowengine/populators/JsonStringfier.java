@@ -15,23 +15,13 @@ public class JsonStringfier implements Stringyfier<Object> {
     public String format(Object bean) {
         ObjectMapper mapper = new ObjectMapper();
 
-        StringBuilder jsonBean = new StringBuilder("[");
-
-        ArrayList<Pupil> list = (ArrayList<Pupil>) bean;
-
-        for (Pupil pupil : list) {
-            try {
-                jsonBean.append(mapper.writeValueAsString(pupil));
-            } catch (JsonProcessingException e) {
-                e.printStackTrace();
-            }
-            jsonBean.append(",");
+        try {
+            return mapper.writeValueAsString(bean);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
         }
 
-        jsonBean.deleteCharAt(jsonBean.length() - 1);
-        jsonBean.append("]");
-
-        return jsonBean.toString();
+        return null;
 
     }
 }
