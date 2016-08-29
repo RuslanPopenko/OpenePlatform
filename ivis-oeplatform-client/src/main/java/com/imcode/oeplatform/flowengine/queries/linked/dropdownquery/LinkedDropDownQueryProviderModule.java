@@ -111,7 +111,7 @@ public class LinkedDropDownQueryProviderModule extends BaseQueryProviderModule<L
     private static final String DEFAULT_CLIENT_SCOPE_STRING = "read\nwrite";
 
     @ModuleSetting
-    @TextFieldSettingDescriptor(name = "Server Url", description = "iVIS server url \"http://localhost:8080/ivis\"", required = true)
+    @TextFieldSettingDescriptor(name = "Server Url", description = "iVIS server url \"http://localhost:8080\"", required = true)
     protected String serverUrl;
 
     @ModuleSetting

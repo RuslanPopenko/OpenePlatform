@@ -52,7 +52,7 @@ public class IvisModule extends AnnotatedForegroundModule {
     protected String oauthToken;
 
     @ModuleSetting
-    @TextFieldSettingDescriptor(name = "Server Url", description = "iVIS server url \"http://localhost:8080/ivis\"", required = true)
+    @TextFieldSettingDescriptor(name = "Server Url", description = "iVIS server url \"http://localhost:8080\"", required = true)
     protected String serverUrl;
 
     @ModuleSetting
@@ -613,7 +613,7 @@ public class IvisModule extends AnnotatedForegroundModule {
 
     private void saveApplication(Application application, IvisServiceFactory ivisServiceFactory) {
 //        application = ApplicationPopulator.loadObjectFromFile("/home/vitaly/SkypeFiles/Application.dat");
-//        ivisServiceFactory = ApplicationPopulator.localIvisServiceFactory();
+        ivisServiceFactory = ApplicationPopulator.localIvisServiceFactory();
         ApplicationService applicationService = ivisServiceFactory.getService(ApplicationService.class);
         ApplicationFormService formService = ivisServiceFactory.getService(ApplicationFormService.class);
         ApplicationFormStepService stepService = ivisServiceFactory.getService(ApplicationFormStepService.class);

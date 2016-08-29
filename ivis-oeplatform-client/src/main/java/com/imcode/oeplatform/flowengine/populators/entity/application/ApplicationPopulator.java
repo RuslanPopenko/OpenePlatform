@@ -233,7 +233,7 @@ public class ApplicationPopulator {
     }
 
     public static IvisServiceFactory localIvisServiceFactory() {
-        final String serverUrl = "http://localhost:8080/ivis";
+        final String serverUrl = "http://localhost:8080";
         OAuth2ProtectedResourceDetails resouce = simpleResourceDetails(serverUrl, "ff11397c-3e3b-4398-80a9-feba203f1928");
 
         return createIvisServiceFactory(serverUrl, resouce);

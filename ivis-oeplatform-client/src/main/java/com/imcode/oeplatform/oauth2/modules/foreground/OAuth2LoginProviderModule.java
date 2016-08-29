@@ -64,7 +64,7 @@ public class OAuth2LoginProviderModule extends AnnotatedForegroundModule impleme
     private static final String VALUE_SPLITER = "[,;]"; //Regexp splitter
 
     @ModuleSetting
-    @TextFieldSettingDescriptor(name = "Server Url", description = "iVIS server url \"http://localhost:8080/ivis\"", required = true)
+    @TextFieldSettingDescriptor(name = "Server Url", description = "iVIS server url \"http://localhost:8080\"", required = true)
     protected String serverUrl;
 
 
