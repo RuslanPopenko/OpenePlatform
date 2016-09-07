@@ -16,6 +16,7 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import com.lowagie.text.pdf.*;
 import org.apache.jempbox.xmp.XMPMetadata;
 import org.apache.jempbox.xmp.XMPSchemaBasic;
 import org.apache.jempbox.xmp.XMPSchemaDublinCore;
@@ -60,10 +61,6 @@ import se.unlogic.standardutils.xml.XMLUtils;
 import se.unlogic.standardutils.xsl.URIXSLTransformer;
 
 import com.lowagie.text.DocumentException;
-import com.lowagie.text.pdf.PdfFileSpecification;
-import com.lowagie.text.pdf.PdfReader;
-import com.lowagie.text.pdf.PdfStamper;
-import com.lowagie.text.pdf.PdfWriter;
 import com.nordicpeak.flowengine.beans.FlowInstance;
 import com.nordicpeak.flowengine.beans.FlowInstanceEvent;
 import com.nordicpeak.flowengine.beans.PDFQueryResponse;
@@ -82,7 +79,7 @@ import com.nordicpeak.flowengine.managers.PDFManagerResponse;
 public class PDFGeneratorModule extends AnnotatedForegroundModule implements FlowEngineInterface, PDFProvider, SiteProfileSettingProvider{
 
 	private static final String LOGOTYPE_SETTING_ID = "pdf.flowinstance.logo";
-	
+
 	public static final RelationQuery EVENT_ATTRIBUTE_RELATION_QUERY = new RelationQuery(FlowInstanceEvent.ATTRIBUTES_RELATION);
 
 	private final EventListener<SubmitEvent> submitEventListener = new SubmitEventListener();
@@ -93,9 +90,9 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 	protected String pdfStyleSheet;
 
 	@ModuleSetting
-	@TextFieldSettingDescriptor(name = "Default logotype", description = "The path to the default logotype. The path can be in both filesystem or classpath. Use classpath:// prefix resouces in classpath and file:/ prefix för files in filesystem.", required = true)
-	protected String defaultLogotype = "classpath://com/nordicpeak/flowengine/pdf/staticcontent/pics/logo.png";	
-	
+	@TextFieldSettingDescriptor(name = "Default logotype", description = "The path to the default logotype. The path can be in both filesystem or classpath. Use classpath:// prefix resouces in classpath and file:/ prefix fÃ¶r files in filesystem.", required = true)
+	protected String defaultLogotype = "classpath://com/nordicpeak/flowengine/pdf/staticcontent/pics/logo.png";
+
 	@ModuleSetting
 	@TextAreaSettingDescriptor(name="Supported actionID's", description="The action ID's which will trigger a PDF to be generated when a submit event is detected")
 	private String supportedActionIDs;
@@ -127,7 +124,7 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 	@ModuleSetting
 	@TextFieldSettingDescriptor(name="XHTML debug file", description="The file to write the generated XHTML to for debug purposes.")
 	private String xhtmlDebugFile;
-	
+
 	@InstanceManagerDependency(required = true)
 	private EvaluationHandler evaluationHandler;
 
@@ -135,13 +132,15 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 	private QueryHandler queryHandler;
 
 	protected SiteProfileHandler siteProfileHandler;
-	
+
 	private FlowEngineDAOFactory daoFactory;
 
 	protected URIXSLTransformer pdfTransformer;
 
 	private List<String> actionList;
 	private List<String> fontList;
+
+	private static final String UTF8_ENCODING = "utf8";
 
 	@SuppressWarnings("unchecked")
 	@Override
@@ -171,13 +170,13 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 		systemInterface.getEventHandler().removeEventListener(FlowInstance.class, CRUDEvent.class, crudEventListener);
 
 		if(siteProfileHandler != null){
-			
-			siteProfileHandler.removeSettingProvider(this);			
-		}		
-		
+
+			siteProfileHandler.removeSettingProvider(this);
+		}
+
 		super.unload();
 	}
-	
+
 	@Override
 	protected void createDAOs(DataSource dataSource) throws Exception {
 
@@ -218,7 +217,7 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 			if(styleSheetURL != null){
 
 				try {
-					pdfTransformer = new URIXSLTransformer(styleSheetURL.toURI(),ClassPathURIResolver.getInstance());
+					pdfTransformer = new URIXSLTransformer(styleSheetURL.toURI(),ClassPathURIResolver.getInstance(), true);
 
 					log.info("Succesfully parsed PDF stylesheet " + pdfStyleSheet);
 
@@ -240,18 +239,18 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 		if(this.pdfStyleSheet == null || this.actionList == null){
 
 			log.warn("Module " + this.moduleDescriptor + " not properly configured, refusing to create PDF for flow instance " + event.getFlowInstanceManager().getFlowInstance());
-		}		
-		
+		}
+
 		if(event.getEvent().getEventType() != EventType.SUBMITTED || event.getActionID() == null || !actionList.contains(event.getActionID()) || event.getFlowInstanceManager().getFlowInstance().getFlow().requiresSigning()){
 
 			return;
 		}
 
 		log.info("Generating PDF for flow instance " + event.getFlowInstanceManager().getFlowInstance() + " triggered by flow instance event " + event.getEvent() + " by user " + event.getEvent().getPoster());
-		
+
 		try {
 			createPDF(event.getFlowInstanceManager(), event.getSiteProfile(), event.getEvent().getPoster(), event.getEvent(), false);
-			
+
 		}catch(Throwable t){
 
 			log.error("Error generating PDF for flow instance " + event.getFlowInstanceManager().getFlowInstance() + " triggered by flow instance event " + event + " by user " + event.getEvent().getPoster(),t);
@@ -261,9 +260,9 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 
 	private File createPDF(FlowInstanceManager instanceManager, SiteProfile siteProfile, User user, FlowInstanceEvent event, boolean signed) throws Exception {
 
-		if(readLock != null){
+		if(dependencyReadLock != null){
 
-			readLock.lock();
+			dependencyReadLock.lock();
 		}
 
 		File basePDF = null;
@@ -281,45 +280,46 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 			documentElement.appendChild(instanceManager.getFlowInstance().toXML(doc));
 
 			String logotype = null;
-			
+
 			if(siteProfile != null){
-				
+
 				logotype = siteProfile.getSettingHandler().getString(LOGOTYPE_SETTING_ID);
-				
+
 			}else if(this.siteProfileHandler != null){
-				
+
 				logotype = siteProfileHandler.getGlobalSettingHandler().getString(LOGOTYPE_SETTING_ID);
 			}
-			
+
 			if(logotype == null){
-				
+
 				logotype = defaultLogotype;
 			}
-			
+
 			XMLUtils.appendNewCDATAElement(doc, documentElement, "Logotype", logotype);
-			
+
 			XMLUtils.appendNewCDATAElement(doc, documentElement, "Signed", signed);
-			
+
 			Timestamp submitDate;
-			
+
 			if(event != null){
-				
+
 				submitDate = event.getAdded();
-				
+
 			}else{
-				
+
 				submitDate = TimeUtils.getCurrentTimestamp();
 			}
-			
+
 			XMLUtils.appendNewCDATAElement(doc, documentElement, "SubmitDate", DateUtils.DATE_TIME_FORMATTER.format(submitDate));
-			
+
 			XMLUtils.append(doc, documentElement, "ManagerResponses", managerResponses);
 
 
 			if(xmlDebug && xmlDebugFile != null){
 
 				try{
-					XMLUtils.writeXMLFile(doc, xmlDebugFile, true, systemInterface.getEncoding());
+
+					XMLUtils.writeXMLFile(doc, xmlDebugFile, true, UTF8_ENCODING);
 
 				}catch(Exception e){
 
@@ -329,14 +329,14 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 
 			StringWriter writer = new StringWriter();
 
-			XMLTransformer.transformToWriter(pdfTransformer.getTransformer(), doc, writer, systemInterface.getEncoding());
+			XMLTransformer.transformToWriter(pdfTransformer.getTransformer(), doc, writer, UTF8_ENCODING);
 
-			Document document = XMLUtils.parseXML(writer.toString(), false, false);
+			Document document = XMLUtils.parseXML(writer.toString().replaceAll("ISO-8859-1", "UTF-8"), false, false);
 
 			if(xhtmlDebug && xhtmlDebugFile != null){
 
 				try{
-					XMLUtils.writeXMLFile(document, xhtmlDebugFile, true, systemInterface.getEncoding());
+					XMLUtils.writeXMLFile(document, xhtmlDebugFile, true, UTF8_ENCODING);
 
 				}catch(Exception e){
 
@@ -353,10 +353,10 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 			log.info("PDF for flow instance " + instanceManager.getFlowInstance() + ", event " + event + " written to " + outputFile.getAbsolutePath());
 
 			if(event != null){
-			
+
 				setEventAttributes(event);
 			}
-			
+
 			return outputFile;
 
 		}finally{
@@ -371,9 +371,9 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 				log.warn("Unable to delete file: " + pdfWithAttachments);
 			}
 
-			if(readLock != null){
+			if(dependencyReadLock != null){
 
-				readLock.unlock();
+				dependencyReadLock.unlock();
 			}
 		}
 	}
@@ -381,7 +381,7 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 	private void setEventAttributes(FlowInstanceEvent event) throws SQLException {
 
 		event.getAttributeHandler().setAttribute("pdf", "true");
-		daoFactory.getFlowInstanceEventDAO().update(event, EVENT_ATTRIBUTE_RELATION_QUERY);	
+		daoFactory.getFlowInstanceEventDAO().update(event, EVENT_ATTRIBUTE_RELATION_QUERY);
 	}
 
 	private File writePDFA(File pdfWithAttachments, FlowInstanceManager instanceManager, FlowInstanceEvent event) throws Exception {
@@ -499,7 +499,7 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 	}
 
 	private File createBasePDF(Node node, List<PDFManagerResponse> managerResponses, FlowInstanceManager instanceManager, FlowInstanceEvent event) throws DocumentException, IOException {
-		
+
 		File basePDF = File.createTempFile("basepdf", instanceManager.getFlowInstanceID() + "-" + getFileSuffix(event) + ".pdf", getTempDir());
 
 		OutputStream basePDFOutputStream = null;
@@ -516,11 +516,12 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 
 				for(String font : fontList){
 
-					renderer.getFontResolver().addFont(font, true);
+					renderer.getFontResolver().addFont(font, BaseFont.IDENTITY_H, true);
 				}
 			}
 
-			renderer.setDocument((Document)node, "c:\\users\\unlogic\foo.html");
+
+			renderer.setDocument((Document) node, "c:\\users\\unlogic\foo.html");
 			renderer.layout();
 
 			renderer.createPDF(basePDFOutputStream);
@@ -534,13 +535,13 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 	}
 
 	private String getFileSuffix(FlowInstanceEvent event) {
-		
+
 		if(event != null){
-			
+
 			return event.getEventID().toString();
-			
+
 		}else{
-			
+
 			return "temp";
 		}
 	}
@@ -560,18 +561,18 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 		if(event.getAction() == CRUDAction.DELETE){
 
 			for(FlowInstance flowInstance : event.getBeans()){
-				
+
 				File instanceDir = new File(pdfDir + File.separator + flowInstance.getFlowInstanceID());
-				
+
 				if(!instanceDir.exists()){
-					
+
 					continue;
 				}
-				
+
 				log.info("Deleting PDF files for flow instance " + flowInstance);
-				
+
 				FileUtils.deleteFiles(instanceDir, null, true);
-				
+
 				instanceDir.delete();
 			}
 		}
@@ -588,6 +589,12 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 				PDFGeneratorModule.this.onSubmitEvent(event);
 			}
 		}
+
+		@Override
+		public int getPriority() {
+
+			return 0;
+		}
 	}
 
 	protected class FlowInstanceCRUDEventListener implements EventListener<CRUDEvent<FlowInstance>> {
@@ -599,6 +606,12 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 
 				PDFGeneratorModule.this.onCRUDEvent(event);
 			}
+		}
+
+		@Override
+		public int getPriority() {
+
+			return 0;
 		}
 	}
 
@@ -638,19 +651,19 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 
 		return null;
 	}
-	
+
 	@InstanceManagerDependency(required=true)
 	public void setSiteProfileHandler(SiteProfileHandler siteProfileHandler) {
-	
+
 		if(siteProfileHandler != null){
-			
+
 			siteProfileHandler.addSettingProvider(this);
-			
+
 		}else{
-			
+
 			this.siteProfileHandler.removeSettingProvider(this);
 		}
-		
+
 		this.siteProfileHandler = siteProfileHandler;
 	}
 
@@ -670,16 +683,16 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 	public boolean saveTemporaryPDF(Integer flowInstanceID, FlowInstanceEvent event) throws Exception{
 
 		File tempFile = getFile(flowInstanceID, null);
-		
+
 		if(tempFile == null){
-			
+
 			return false;
 		}
-		
+
 		FileUtils.moveFile(tempFile, getFile(flowInstanceID, event));
-		
+
 		setEventAttributes(event);
-		
+
 		return true;
 	}
 
@@ -687,7 +700,7 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 	public boolean deleteTemporaryPDF(Integer flowInstanceID) {
 
 		File tempFile = getFile(flowInstanceID, null);
-			
+
 		return FileUtils.deleteFile(tempFile);
 	}
 
@@ -695,7 +708,7 @@ public class PDFGeneratorModule extends AnnotatedForegroundModule implements Flo
 	public boolean hasTemporaryPDF(Integer flowInstanceID) {
 
 		File tempFile = getFile(flowInstanceID, null);
-		
+
 		return tempFile.exists();
 	}
 

@@ -51,6 +51,7 @@
         <option value="$PROJECT_DIR$/SearchLMRMI/pom.xml" />
         <option value="$PROJECT_DIR$/cron4jutils/pom.xml" />
         <option value="$PROJECT_DIR$/BaseMapQuery/pom.xml" />
+        <option value="$PROJECT_DIR$/FlowInstancePDFGenerator/pom.xml" />
       </list>
     </option>
   </component>

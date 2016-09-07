@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.imcode.ivis:ivis-sdk:1.0.0-alpha1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/imcode/ivis/ivis-sdk/1.0.0-alpha1-SNAPSHOT/ivis-sdk-1.0.0-alpha1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/imcode/ivis/ivis-sdk/1.0.0-alpha1-SNAPSHOT/ivis-sdk-1.0.0-alpha1-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/imcode/ivis/ivis-sdk/1.0.0-alpha1-SNAPSHOT/ivis-sdk-1.0.0-alpha1-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

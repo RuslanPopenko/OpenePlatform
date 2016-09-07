@@ -1,0 +1,4425 @@
+<dataSource name="MySQL - db_open_platform@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="db_open_platform">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="db_ivis_info" />
+    <schema id="3" name="db_ivis_info_temp" />
+    <schema id="4" name="db_ivis_test" />
+    <schema id="5" name="db_ivis_test_temp" />
+    <schema id="6" name="information_schema" />
+    <schema id="7" name="mysql" />
+    <schema id="8" name="performance_schema" />
+    <schema id="9" name="sys" />
+    <schema id="10" name="temp" />
+    <schema id="11" name="db_test" />
+    <schema id="12" name="mydatabase" />
+    <table id="13" parent="1" name="checkbox_queries" />
+    <table id="14" parent="1" name="checkbox_query_alternatives" />
+    <table id="15" parent="1" name="checkbox_query_instance_alternatives" />
+    <table id="16" parent="1" name="checkbox_query_instances" />
+    <table id="17" parent="1" name="contact_detail_queries" />
+    <table id="18" parent="1" name="contact_detail_query_instances" />
+    <table id="19" parent="1" name="drop_down_queries" />
+    <table id="20" parent="1" name="drop_down_query_alternatives" />
+    <table id="21" parent="1" name="drop_down_query_instances" />
+    <table id="22" parent="1" name="feedback_flow_submit_surveys" />
+    <table id="23" parent="1" name="file_upload_files" />
+    <table id="24" parent="1" name="file_upload_queries" />
+    <table id="25" parent="1" name="file_upload_query_extensions" />
+    <table id="26" parent="1" name="file_upload_query_instances" />
+    <table id="27" parent="1" name="flow_familiy_notification_settings" />
+    <table id="28" parent="1" name="flowengine_aborted_flow_instances" />
+    <table id="29" parent="1" name="flowengine_default_flow_statuses" />
+    <table id="30" parent="1" name="flowengine_default_standard_statuses" />
+    <table id="31" parent="1" name="flowengine_evaluator_descriptors" />
+    <table id="32" parent="1" name="flowengine_evaluators_target_queries" />
+    <table id="33" parent="1" name="flowengine_external_message_attachments" />
+    <table id="34" parent="1" name="flowengine_external_message_read_receipts" />
+    <table id="35" parent="1" name="flowengine_external_messages" />
+    <table id="36" parent="1" name="flowengine_flow_actions" />
+    <table id="37" parent="1" name="flowengine_flow_categories" />
+    <table id="38" parent="1" name="flowengine_flow_checks" />
+    <table id="39" parent="1" name="flowengine_flow_families" />
+    <table id="40" parent="1" name="flowengine_flow_family_favourites" />
+    <table id="41" parent="1" name="flowengine_flow_family_manager_groups" />
+    <table id="42" parent="1" name="flowengine_flow_family_manager_users" />
+    <table id="43" parent="1" name="flowengine_flow_instance_attributes" />
+    <table id="44" parent="1" name="flowengine_flow_instance_bookmarks" />
+    <table id="45" parent="1" name="flowengine_flow_instance_event_attributes" />
+    <table id="46" parent="1" name="flowengine_flow_instance_events" />
+    <table id="47" parent="1" name="flowengine_flow_instance_managers" />
+    <table id="48" parent="1" name="flowengine_flow_instances" />
+    <table id="49" parent="1" name="flowengine_flow_statuses" />
+    <table id="50" parent="1" name="flowengine_flow_tags" />
+    <table id="51" parent="1" name="flowengine_flow_type_admin_groups" />
+    <table id="52" parent="1" name="flowengine_flow_type_admin_users" />
+    <table id="53" parent="1" name="flowengine_flow_type_allowed_queries" />
+    <table id="54" parent="1" name="flowengine_flow_types" />
+    <table id="55" parent="1" name="flowengine_flows" />
+    <table id="56" parent="1" name="flowengine_internal_message_attachments" />
+    <table id="57" parent="1" name="flowengine_internal_message_read_receipts" />
+    <table id="58" parent="1" name="flowengine_internal_messages" />
+    <table id="59" parent="1" name="flowengine_operating_message_flowfamilies" />
+    <table id="60" parent="1" name="flowengine_operating_messages" />
+    <table id="61" parent="1" name="flowengine_query_descriptors" />
+    <table id="62" parent="1" name="flowengine_query_instance_descriptors" />
+    <table id="63" parent="1" name="flowengine_standard_statuses" />
+    <table id="64" parent="1" name="flowengine_steps" />
+    <table id="65" parent="1" name="flowengine_text_tags" />
+    <table id="66" parent="1" name="flowengine_user_organizations" />
+    <table id="67" parent="1" name="ivis_checkbox_queries" />
+    <table id="68" parent="1" name="ivis_checkbox_query_alternatives" />
+    <table id="69" parent="1" name="ivis_checkbox_query_instance_alternatives" />
+    <table id="70" parent="1" name="ivis_checkbox_query_instances" />
+    <table id="71" parent="1" name="ivis_drop_down_queries" />
+    <table id="72" parent="1" name="ivis_drop_down_query_alternatives" />
+    <table id="73" parent="1" name="ivis_drop_down_query_instances" />
+    <table id="74" parent="1" name="ivis_label_field_queries" />
+    <table id="75" parent="1" name="ivis_label_field_query_instance_values" />
+    <table id="76" parent="1" name="ivis_label_field_query_instances" />
+    <table id="77" parent="1" name="ivis_label_fields" />
+    <table id="78" parent="1" name="ivis_radio_button_queries" />
+    <table id="79" parent="1" name="ivis_radio_button_query_alternatives" />
+    <table id="80" parent="1" name="ivis_radio_button_query_instances" />
+    <table id="81" parent="1" name="ivis_text_area_queries" />
+    <table id="82" parent="1" name="ivis_text_area_query_instances" />
+    <table id="83" parent="1" name="ivis_text_field_queries" />
+    <table id="84" parent="1" name="ivis_text_field_query_instance_values" />
+    <table id="85" parent="1" name="ivis_text_field_query_instances" />
+    <table id="86" parent="1" name="ivis_text_fields" />
+    <table id="87" parent="1" name="linked_drop_down_queries" />
+    <table id="88" parent="1" name="linked_drop_down_query_instances" />
+    <table id="89" parent="1" name="openhierarchy_background_module_aliases" />
+    <table id="90" parent="1" name="openhierarchy_background_module_attributes" />
+    <table id="91" parent="1" name="openhierarchy_background_module_groups" />
+    <table id="92" parent="1" name="openhierarchy_background_module_settings" />
+    <table id="93" parent="1" name="openhierarchy_background_module_slots" />
+    <table id="94" parent="1" name="openhierarchy_background_module_users" />
+    <table id="95" parent="1" name="openhierarchy_background_modules" />
+    <table id="96" parent="1" name="openhierarchy_data_sources" />
+    <table id="97" parent="1" name="openhierarchy_filter_module_aliases" />
+    <table id="98" parent="1" name="openhierarchy_filter_module_attributes" />
+    <table id="99" parent="1" name="openhierarchy_filter_module_groups" />
+    <table id="100" parent="1" name="openhierarchy_filter_module_settings" />
+    <table id="101" parent="1" name="openhierarchy_filter_module_users" />
+    <table id="102" parent="1" name="openhierarchy_filter_modules" />
+    <table id="103" parent="1" name="openhierarchy_foreground_module_attributes" />
+    <table id="104" parent="1" name="openhierarchy_foreground_module_groups" />
+    <table id="105" parent="1" name="openhierarchy_foreground_module_settings" />
+    <table id="106" parent="1" name="openhierarchy_foreground_module_users" />
+    <table id="107" parent="1" name="openhierarchy_foreground_modules" />
+    <table id="108" parent="1" name="openhierarchy_menu_index">
+      <comment>InnoDB free: 206848 kB; (`sectionID`) REFER `foraldramotet-o</comment>
+    </table>
+    <table id="109" parent="1" name="openhierarchy_section_attributes" />
+    <table id="110" parent="1" name="openhierarchy_section_groups" />
+    <table id="111" parent="1" name="openhierarchy_section_users" />
+    <table id="112" parent="1" name="openhierarchy_sections" />
+    <table id="113" parent="1" name="openhierarchy_virtual_menu_item_groups" />
+    <table id="114" parent="1" name="openhierarchy_virtual_menu_item_users" />
+    <table id="115" parent="1" name="openhierarchy_virtual_menu_items" />
+    <table id="116" parent="1" name="organization_detail_queries" />
+    <table id="117" parent="1" name="organization_detail_query_instances" />
+    <table id="118" parent="1" name="page_groups" />
+    <table id="119" parent="1" name="page_users" />
+    <table id="120" parent="1" name="pages">
+      <comment>InnoDB free: 191488 kB; (`sectionID`) REFER `fkdb-system/sec</comment>
+    </table>
+    <table id="121" parent="1" name="query_state_evaluator_alternatives" />
+    <table id="122" parent="1" name="query_state_evaluators" />
+    <table id="123" parent="1" name="radio_button_queries" />
+    <table id="124" parent="1" name="radio_button_query_alternatives" />
+    <table id="125" parent="1" name="radio_button_query_instances" />
+    <table id="126" parent="1" name="simple_group_attributes" />
+    <table id="127" parent="1" name="simple_groups" />
+    <table id="128" parent="1" name="simple_user_attributes" />
+    <table id="129" parent="1" name="simple_user_groups" />
+    <table id="130" parent="1" name="simple_users" />
+    <table id="131" parent="1" name="site_profile_domains" />
+    <table id="132" parent="1" name="site_profile_global_settings" />
+    <table id="133" parent="1" name="site_profile_settings" />
+    <table id="134" parent="1" name="site_profiles" />
+    <table id="135" parent="1" name="table_versions" />
+    <table id="136" parent="1" name="text_area_queries" />
+    <table id="137" parent="1" name="text_area_query_instances" />
+    <table id="138" parent="1" name="text_field_queries" />
+    <table id="139" parent="1" name="text_field_query_instance_values" />
+    <table id="140" parent="1" name="text_field_query_instances" />
+    <table id="141" parent="1" name="text_fields" />
+    <column id="142" parent="13" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="143" parent="13" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="144" parent="13" name="minChecked">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="145" parent="13" name="maxChecked">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="146" parent="13" name="freeTextAlternative">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="147" parent="13" name="helpText">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="148" parent="13" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="149" parent="14" name="alternativeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="150" parent="14" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="151" parent="14" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="152" parent="14" name="sortIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="153" parent="14" name="FK_checkbox_query_alternatives_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="154" parent="14" name="PRIMARY">
+      <columns>alternativeID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="155" parent="14" name="FK_checkbox_query_alternatives_1">
+      <columns>queryID</columns>
+      <ref-key>~.checkbox_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="156" parent="15" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="157" parent="15" name="alternativeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="158" parent="15" name="FK_checkbox_query_instance_alternatives_2">
+      <columns>alternativeID</columns>
+      <desc-columns />
+    </index>
+    <key id="159" parent="15" name="PRIMARY">
+      <columns>queryInstanceID
+alternativeID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="160" parent="15" name="FK_checkbox_query_instance_alternatives_1">
+      <columns>queryInstanceID</columns>
+      <ref-key>~.checkbox_query_instances.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="161" parent="15" name="FK_checkbox_query_instance_alternatives_2">
+      <columns>alternativeID</columns>
+      <ref-key>~.checkbox_query_alternatives.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="162" parent="16" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="163" parent="16" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="164" parent="16" name="freeTextAlternativeValue">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="165" parent="16" name="minChecked">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="166" parent="16" name="maxChecked">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="167" parent="16" name="FK_checkbox_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="168" parent="16" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="169" parent="16" name="FK_checkbox_query_instances_1">
+      <columns>queryID</columns>
+      <ref-key>~.checkbox_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="170" parent="17" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="171" parent="17" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="172" parent="17" name="helpText">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="173" parent="17" name="allowSMS">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1) unsigned|0</data-type>
+    </column>
+    <column id="174" parent="17" name="requireAddress">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <key id="175" parent="17" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="176" parent="18" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="177" parent="18" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="178" parent="18" name="firstname">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="179" parent="18" name="lastname">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="180" parent="18" name="address">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="181" parent="18" name="zipCode">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="182" parent="18" name="postalAddress">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="183" parent="18" name="phone">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="184" parent="18" name="email">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="185" parent="18" name="mobilePhone">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="186" parent="18" name="contactBySMS">
+      <data-type>tinyint(1) unsigned|0</data-type>
+    </column>
+    <column id="187" parent="18" name="persistUserProfile">
+      <data-type>tinyint(1) unsigned|0</data-type>
+    </column>
+    <index id="188" parent="18" name="FK_contact_detail_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="189" parent="18" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="190" parent="18" name="FK_contact_detail_query_instances_1">
+      <columns>queryID</columns>
+      <ref-key>~.contact_detail_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="191" parent="19" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="192" parent="19" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="193" parent="19" name="shortDescription">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="194" parent="19" name="freeTextAlternative">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="195" parent="19" name="helpText">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="196" parent="19" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="197" parent="20" name="alternativeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="198" parent="20" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="199" parent="20" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="200" parent="20" name="sortIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="201" parent="20" name="FK_drop_down_query_alternatives_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="202" parent="20" name="PRIMARY">
+      <columns>alternativeID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="203" parent="20" name="FK_drop_down_query_alternatives_1">
+      <columns>queryID</columns>
+      <ref-key>~.drop_down_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="204" parent="21" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="205" parent="21" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="206" parent="21" name="alternativeID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="207" parent="21" name="freeTextAlternativeValue">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="208" parent="21" name="FK_drop_down_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <index id="209" parent="21" name="FK_drop_down_query_instances_2">
+      <columns>alternativeID</columns>
+      <desc-columns />
+    </index>
+    <key id="210" parent="21" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="211" parent="21" name="FK_drop_down_query_instances_1">
+      <columns>queryID</columns>
+      <ref-key>~.drop_down_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="212" parent="21" name="FK_drop_down_query_instances_2">
+      <columns>alternativeID</columns>
+      <ref-key>~.drop_down_query_alternatives.PRIMARY</ref-key>
+      <cascade-update-rule>set_null</cascade-update-rule>
+      <cascade-delete-rule>set_null</cascade-delete-rule>
+    </foreign-key>
+    <column id="213" parent="22" name="feedbackSurveyID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="214" parent="22" name="flowID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="215" parent="22" name="flowInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="216" parent="22" name="added">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="217" parent="22" name="answer">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="218" parent="22" name="comment">
+      <data-type>mediumtext|0</data-type>
+    </column>
+    <index id="219" parent="22" name="Index_3">
+      <columns>flowID
+flowInstanceID</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="220" parent="22" name="PRIMARY">
+      <columns>feedbackSurveyID</columns>
+      <primary>1</primary>
+    </key>
+    <key id="221" parent="22" name="Index_3">
+      <columns>flowID
+flowInstanceID</columns>
+      <underlying-index>Index_3</underlying-index>
+    </key>
+    <foreign-key id="222" parent="22" name="FK_feedback_flow_submit_surveys_1">
+      <columns>flowID</columns>
+      <ref-key>~.flowengine_flows.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="223" parent="23" name="fileID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="224" parent="23" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="225" parent="23" name="size">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="226" parent="23" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="227" parent="23" name="FK_file_upload_files_1">
+      <columns>queryInstanceID</columns>
+      <desc-columns />
+    </index>
+    <key id="228" parent="23" name="PRIMARY">
+      <columns>fileID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="229" parent="23" name="FK_file_upload_files_1">
+      <columns>queryInstanceID</columns>
+      <ref-key>~.file_upload_query_instances.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="230" parent="24" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="231" parent="24" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="232" parent="24" name="helpText">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="233" parent="24" name="maxFileCount">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="234" parent="24" name="maxFileSize">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="235" parent="24" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="236" parent="25" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="237" parent="25" name="extension">
+      <mandatory>1</mandatory>
+      <data-type>varchar(12)|0</data-type>
+    </column>
+    <key id="238" parent="25" name="PRIMARY">
+      <columns>queryID
+extension</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="239" parent="25" name="FK_file_upload_query_extensions_1">
+      <columns>queryID</columns>
+      <ref-key>~.file_upload_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="240" parent="26" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="241" parent="26" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="242" parent="26" name="FK_file_upload_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="243" parent="26" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="244" parent="26" name="FK_file_upload_query_instances_1">
+      <columns>queryID</columns>
+      <ref-key>~.file_upload_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="245" parent="27" name="flowFamilyID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="246" parent="27" name="sendStatusChangedUserSMS">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="247" parent="27" name="sendExternalMessageReceivedUserSMS">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="248" parent="27" name="sendFlowInstanceSubmittedUserSMS">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="249" parent="27" name="sendFlowInstanceArchivedUserSMS">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="250" parent="27" name="sendStatusChangedUserEmail">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="251" parent="27" name="sendExternalMessageReceivedUserEmail">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="252" parent="27" name="sendFlowInstanceSubmittedUserEmail">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="253" parent="27" name="sendFlowInstanceArchivedUserEmail">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="254" parent="27" name="flowInstanceSubmittedUserEmailSubject">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="255" parent="27" name="flowInstanceSubmittedUserEmailMessage">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="256" parent="27" name="flowInstanceArchivedUserEmailSubject">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="257" parent="27" name="flowInstanceArchivedUserEmailMessage">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="258" parent="27" name="sendExternalMessageReceivedManagerEmail">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="259" parent="27" name="sendFlowInstanceAssignedManagerEmail">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="260" parent="27" name="sendStatusChangedManagerEmail">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="261" parent="27" name="sendFlowInstanceSubmittedManagerEmail">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="262" parent="27" name="sendFlowInstanceSubmittedGlobalEmail">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="263" parent="27" name="flowInstanceSubmittedGlobalEmailAddress">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="264" parent="27" name="flowInstanceSubmittedGlobalEmailAttachPDF">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <key id="265" parent="27" name="PRIMARY">
+      <columns>flowFamilyID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="266" parent="28" name="abortID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="267" parent="28" name="flowFamilyID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="268" parent="28" name="flowID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="269" parent="28" name="stepID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="270" parent="28" name="added">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <index id="271" parent="28" name="FK_flowengine_aborted_flow_instances_1">
+      <columns>flowID</columns>
+      <desc-columns />
+    </index>
+    <key id="272" parent="28" name="PRIMARY">
+      <columns>abortID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="273" parent="28" name="FK_flowengine_aborted_flow_instances_1">
+      <columns>flowID</columns>
+      <ref-key>~.flowengine_flows.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="274" parent="29" name="actionID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="275" parent="29" name="flowID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="276" parent="29" name="statusID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="277" parent="29" name="FK_flowengine_default_flow_states_2">
+      <columns>flowID</columns>
+      <desc-columns />
+    </index>
+    <index id="278" parent="29" name="FK_flowengine_default_flow_states_3">
+      <columns>statusID</columns>
+      <desc-columns />
+    </index>
+    <key id="279" parent="29" name="PRIMARY">
+      <columns>actionID
+flowID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="280" parent="29" name="FK_flowengine_default_flow_states_1">
+      <columns>actionID</columns>
+      <ref-key>~.flowengine_flow_actions.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="281" parent="29" name="FK_flowengine_default_flow_states_2">
+      <columns>flowID</columns>
+      <ref-key>~.flowengine_flows.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="282" parent="29" name="FK_flowengine_default_flow_statuses_3">
+      <columns>statusID</columns>
+      <ref-key>~.flowengine_flow_statuses.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="283" parent="30" name="actionID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="284" parent="30" name="statusID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="285" parent="30" name="FK_flowengine_default_standard_statuses_2">
+      <columns>statusID</columns>
+      <desc-columns />
+    </index>
+    <key id="286" parent="30" name="PRIMARY">
+      <columns>actionID
+statusID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="287" parent="30" name="FK_flowengine_default_standard_statuses_1">
+      <columns>actionID</columns>
+      <ref-key>~.flowengine_flow_actions.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="288" parent="30" name="FK_flowengine_default_standard_statuses_2">
+      <columns>statusID</columns>
+      <ref-key>~.flowengine_standard_statuses.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="289" parent="31" name="evaluatorID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="290" parent="31" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="291" parent="31" name="sortIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="292" parent="31" name="evaluatorTypeID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="293" parent="31" name="enabled">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="294" parent="31" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="295" parent="31" name="FK_flowengine_evaluator_descriptors_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="296" parent="31" name="PRIMARY">
+      <columns>evaluatorID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="297" parent="31" name="FK_flowengine_evaluator_descriptors_1">
+      <columns>queryID</columns>
+      <ref-key>~.flowengine_query_descriptors.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="298" parent="32" name="evaluatorID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="299" parent="32" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="300" parent="32" name="PRIMARY">
+      <columns>evaluatorID
+queryID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="301" parent="32" name="FK_flowengine_evaluators_target_queries_1">
+      <columns>evaluatorID</columns>
+      <ref-key>~.flowengine_evaluator_descriptors.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="302" parent="33" name="attachmentID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="303" parent="33" name="filename">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="304" parent="33" name="size">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="305" parent="33" name="added">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="306" parent="33" name="data">
+      <mandatory>1</mandatory>
+      <data-type>longblob|0</data-type>
+    </column>
+    <column id="307" parent="33" name="messageID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="308" parent="33" name="FK_flowengine_external_message_attachments_1">
+      <columns>messageID</columns>
+      <desc-columns />
+    </index>
+    <key id="309" parent="33" name="PRIMARY">
+      <columns>attachmentID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="310" parent="33" name="FK_flowengine_external_message_attachments_1">
+      <columns>messageID</columns>
+      <ref-key>~.flowengine_external_messages.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="311" parent="34" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="312" parent="34" name="messageID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="313" parent="34" name="read">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="314" parent="34" name="FK_flowengine_external_message_read_receipts_1">
+      <columns>messageID</columns>
+      <desc-columns />
+    </index>
+    <key id="315" parent="34" name="PRIMARY">
+      <columns>userID
+messageID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="316" parent="34" name="FK_flowengine_external_message_read_receipts_1">
+      <columns>messageID</columns>
+      <ref-key>~.flowengine_external_messages.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="317" parent="35" name="messageID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="318" parent="35" name="poster">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="319" parent="35" name="added">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="320" parent="35" name="editor">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="321" parent="35" name="updated">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="322" parent="35" name="message">
+      <mandatory>1</mandatory>
+      <data-type>mediumtext|0</data-type>
+    </column>
+    <column id="323" parent="35" name="flowInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="324" parent="35" name="FK_flowengine_external_messages_1">
+      <columns>flowInstanceID</columns>
+      <desc-columns />
+    </index>
+    <key id="325" parent="35" name="PRIMARY">
+      <columns>messageID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="326" parent="35" name="FK_flowengine_external_messages_1">
+      <columns>flowInstanceID</columns>
+      <ref-key>~.flowengine_flow_instances.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="327" parent="36" name="actionID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="328" parent="36" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="329" parent="36" name="required">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1) unsigned|0</data-type>
+    </column>
+    <key id="330" parent="36" name="PRIMARY">
+      <columns>actionID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="331" parent="37" name="categoryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="332" parent="37" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="333" parent="37" name="flowTypeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="334" parent="37" name="FK_flowengine_flow_categories_1">
+      <columns>flowTypeID</columns>
+      <desc-columns />
+    </index>
+    <key id="335" parent="37" name="PRIMARY">
+      <columns>categoryID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="336" parent="37" name="FK_flowengine_flow_categories_1">
+      <columns>flowTypeID</columns>
+      <ref-key>~.flowengine_flow_types.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="337" parent="38" name="flowID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="338" parent="38" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="339" parent="38" name="PRIMARY">
+      <columns>flowID
+value</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="340" parent="38" name="FK_flowengine_flow_checks_1">
+      <columns>flowID</columns>
+      <ref-key>~.flowengine_flows.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="341" parent="39" name="flowFamilyID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="342" parent="39" name="versionCount">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="343" parent="39" name="contactName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="344" parent="39" name="contactEmail">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="345" parent="39" name="contactPhone">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="346" parent="39" name="ownerName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="347" parent="39" name="ownerEmail">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="348" parent="39" name="statisticsMode">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <key id="349" parent="39" name="PRIMARY">
+      <columns>flowFamilyID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="350" parent="40" name="flowFamilyID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="351" parent="40" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="352" parent="40" name="PRIMARY">
+      <columns>flowFamilyID
+userID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="353" parent="40" name="FK_flowengine_flow_family_favourites_1">
+      <columns>flowFamilyID</columns>
+      <ref-key>~.flowengine_flow_families.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="354" parent="41" name="flowFamilyID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="355" parent="41" name="groupID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="356" parent="41" name="PRIMARY">
+      <columns>flowFamilyID
+groupID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="357" parent="41" name="FK_flowengine_flow_family_manager_groups_1">
+      <columns>flowFamilyID</columns>
+      <ref-key>~.flowengine_flow_families.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="358" parent="42" name="flowFamilyID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="359" parent="42" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="360" parent="42" name="PRIMARY">
+      <columns>flowFamilyID
+userID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="361" parent="42" name="FK_flowengine_flow_family_manager_users_1">
+      <columns>flowFamilyID</columns>
+      <ref-key>~.flowengine_flow_families.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="362" parent="43" name="flowInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="363" parent="43" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="364" parent="43" name="value">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="365" parent="43" name="PRIMARY">
+      <columns>flowInstanceID
+name</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="366" parent="43" name="FK_flowengine_flow_instance_attributes_1">
+      <columns>flowInstanceID</columns>
+      <ref-key>~.flowengine_flow_instances.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="367" parent="44" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="368" parent="44" name="flowInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="369" parent="44" name="FK_flowengine_flow_instance_bookmarks_1">
+      <columns>flowInstanceID</columns>
+      <desc-columns />
+    </index>
+    <key id="370" parent="44" name="PRIMARY">
+      <columns>userID
+flowInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="371" parent="44" name="FK_flowengine_flow_instance_bookmarks_1">
+      <columns>flowInstanceID</columns>
+      <ref-key>~.flowengine_flow_instances.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="372" parent="45" name="eventID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="373" parent="45" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="374" parent="45" name="value">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <key id="375" parent="45" name="PRIMARY">
+      <columns>eventID
+name</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="376" parent="45" name="FK_flowengine_flow_instance_event_attributes_1">
+      <columns>eventID</columns>
+      <ref-key>~.flowengine_flow_instance_events.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="377" parent="46" name="eventID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="378" parent="46" name="flowInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="379" parent="46" name="eventType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="380" parent="46" name="status">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="381" parent="46" name="statusDescription">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="382" parent="46" name="details">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="383" parent="46" name="added">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="384" parent="46" name="poster">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="385" parent="46" name="FK_flowengine_flow_instance_events_1">
+      <columns>flowInstanceID</columns>
+      <desc-columns />
+    </index>
+    <key id="386" parent="46" name="PRIMARY">
+      <columns>eventID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="387" parent="46" name="FK_flowengine_flow_instance_events_1">
+      <columns>flowInstanceID</columns>
+      <ref-key>~.flowengine_flow_instances.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="388" parent="47" name="flowInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="389" parent="47" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="390" parent="47" name="PRIMARY">
+      <columns>flowInstanceID
+userID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="391" parent="47" name="FK_flowengine_flow_instance_managers_1">
+      <columns>flowInstanceID</columns>
+      <ref-key>~.flowengine_flow_instances.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="392" parent="48" name="flowInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="393" parent="48" name="poster">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="394" parent="48" name="added">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="395" parent="48" name="editor">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="396" parent="48" name="updated">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="397" parent="48" name="fullyPopulated">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="398" parent="48" name="flowID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="399" parent="48" name="stepID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="400" parent="48" name="statusID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="401" parent="48" name="lastStatusChange">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="402" parent="48" name="profileID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="403" parent="48" name="FK_flowengine_flow_instances_1">
+      <columns>flowID</columns>
+      <desc-columns />
+    </index>
+    <index id="404" parent="48" name="FK_flowengine_flow_instances_2">
+      <columns>stepID</columns>
+      <desc-columns />
+    </index>
+    <index id="405" parent="48" name="FK_flowengine_flow_instances_3">
+      <columns>statusID</columns>
+      <desc-columns />
+    </index>
+    <key id="406" parent="48" name="PRIMARY">
+      <columns>flowInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="407" parent="48" name="FK_flowengine_flow_instances_1">
+      <columns>flowID</columns>
+      <ref-key>~.flowengine_flows.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="408" parent="48" name="FK_flowengine_flow_instances_2">
+      <columns>stepID</columns>
+      <ref-key>~.flowengine_steps.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="409" parent="48" name="FK_flowengine_flow_instances_3">
+      <columns>statusID</columns>
+      <ref-key>~.flowengine_flow_statuses.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="410" parent="49" name="statusID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="411" parent="49" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="412" parent="49" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="413" parent="49" name="managingTime">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="414" parent="49" name="isUserMutable">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="415" parent="49" name="isAdminMutable">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="416" parent="49" name="contentType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="417" parent="49" name="flowID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="418" parent="49" name="isUserDeletable">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="419" parent="49" name="isAdminDeletable">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <index id="420" parent="49" name="FK_flowengine_flow_states_1">
+      <columns>flowID</columns>
+      <desc-columns />
+    </index>
+    <key id="421" parent="49" name="PRIMARY">
+      <columns>statusID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="422" parent="49" name="FK_flowengine_flow_statuses_1">
+      <columns>flowID</columns>
+      <ref-key>~.flowengine_flows.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="423" parent="50" name="flowID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="424" parent="50" name="tag">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="425" parent="50" name="PRIMARY">
+      <columns>flowID
+tag</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="426" parent="50" name="FK_flowengine_flow_tags_1">
+      <columns>flowID</columns>
+      <ref-key>~.flowengine_flows.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="427" parent="51" name="flowTypeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="428" parent="51" name="groupID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="429" parent="51" name="PRIMARY">
+      <columns>flowTypeID
+groupID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="430" parent="51" name="FK_flowengine_flow_type_admin_groups_1">
+      <columns>flowTypeID</columns>
+      <ref-key>~.flowengine_flow_types.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="431" parent="52" name="flowTypeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="432" parent="52" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="433" parent="52" name="PRIMARY">
+      <columns>flowTypeID
+userID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="434" parent="52" name="FK_flowengine_flow_type_admin_users_1">
+      <columns>flowTypeID</columns>
+      <ref-key>~.flowengine_flow_types.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="435" parent="53" name="flowTypeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="436" parent="53" name="queryTypeID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="437" parent="53" name="PRIMARY">
+      <columns>flowTypeID
+queryTypeID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="438" parent="53" name="FK_flowengine_flow_type_allowed_queries_1">
+      <columns>flowTypeID</columns>
+      <ref-key>~.flowengine_flow_types.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="439" parent="54" name="flowTypeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="440" parent="54" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="441" parent="54" name="PRIMARY">
+      <columns>flowTypeID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="442" parent="55" name="flowID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="443" parent="55" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="444" parent="55" name="shortDescription">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="445" parent="55" name="longDescription">
+      <data-type>longtext|0</data-type>
+    </column>
+    <column id="446" parent="55" name="submittedMessage">
+      <data-type>longtext|0</data-type>
+    </column>
+    <column id="447" parent="55" name="iconFileName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="448" parent="55" name="icon">
+      <data-type>blob|0</data-type>
+    </column>
+    <column id="449" parent="55" name="publishDate">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="450" parent="55" name="unPublishDate">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="451" parent="55" name="flowTypeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="452" parent="55" name="categoryID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="453" parent="55" name="enabled">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="454" parent="55" name="usePreview">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="455" parent="55" name="flowFamilyID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="456" parent="55" name="version">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="457" parent="55" name="requireAuthentication">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="458" parent="55" name="requireSigning">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1) unsigned|0</data-type>
+    </column>
+    <column id="459" parent="55" name="externalLink">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="460" parent="55" name="showSubmitSurvey">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1) unsigned|0</data-type>
+    </column>
+    <index id="461" parent="55" name="FK_flowengine_flows_1">
+      <columns>flowTypeID</columns>
+      <desc-columns />
+    </index>
+    <index id="462" parent="55" name="FK_flowengine_flows_2">
+      <columns>categoryID</columns>
+      <desc-columns />
+    </index>
+    <index id="463" parent="55" name="FK_flowengine_flows_3">
+      <columns>flowFamilyID</columns>
+      <desc-columns />
+    </index>
+    <key id="464" parent="55" name="PRIMARY">
+      <columns>flowID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="465" parent="55" name="FK_flowengine_flows_1">
+      <columns>flowTypeID</columns>
+      <ref-key>~.flowengine_flow_types.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="466" parent="55" name="FK_flowengine_flows_2">
+      <columns>categoryID</columns>
+      <ref-key>~.flowengine_flow_categories.PRIMARY</ref-key>
+      <cascade-update-rule>set_null</cascade-update-rule>
+      <cascade-delete-rule>set_null</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="467" parent="55" name="FK_flowengine_flows_3">
+      <columns>flowFamilyID</columns>
+      <ref-key>~.flowengine_flow_families.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="468" parent="56" name="attachmentID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="469" parent="56" name="filename">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="470" parent="56" name="size">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="471" parent="56" name="added">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="472" parent="56" name="data">
+      <mandatory>1</mandatory>
+      <data-type>longblob|0</data-type>
+    </column>
+    <column id="473" parent="56" name="messageID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="474" parent="56" name="FK_flowengine_internal_message_attachments_1">
+      <columns>messageID</columns>
+      <desc-columns />
+    </index>
+    <key id="475" parent="56" name="PRIMARY">
+      <columns>attachmentID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="476" parent="56" name="FK_flowengine_internal_message_attachments_1">
+      <columns>messageID</columns>
+      <ref-key>~.flowengine_internal_messages.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="477" parent="57" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="478" parent="57" name="messageID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="479" parent="57" name="read">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="480" parent="57" name="FK_flowengine_internal_message_read_receipts_1">
+      <columns>messageID</columns>
+      <desc-columns />
+    </index>
+    <key id="481" parent="57" name="PRIMARY">
+      <columns>userID
+messageID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="482" parent="57" name="FK_flowengine_internal_message_read_receipts_1">
+      <columns>messageID</columns>
+      <ref-key>~.flowengine_internal_messages.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="483" parent="58" name="messageID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="484" parent="58" name="poster">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="485" parent="58" name="added">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="486" parent="58" name="editor">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="487" parent="58" name="updated">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="488" parent="58" name="message">
+      <mandatory>1</mandatory>
+      <data-type>mediumtext|0</data-type>
+    </column>
+    <column id="489" parent="58" name="flowInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="490" parent="58" name="FK_flowengine_internal_messages_1">
+      <columns>flowInstanceID</columns>
+      <desc-columns />
+    </index>
+    <key id="491" parent="58" name="PRIMARY">
+      <columns>messageID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="492" parent="58" name="FK_flowengine_internal_messages_1">
+      <columns>flowInstanceID</columns>
+      <ref-key>~.flowengine_flow_instances.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="493" parent="59" name="messageID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="494" parent="59" name="flowFamilyID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="495" parent="59" name="FK_flowengine_operating_message_flowfamilies_2">
+      <columns>flowFamilyID</columns>
+      <desc-columns />
+    </index>
+    <key id="496" parent="59" name="PRIMARY">
+      <columns>messageID
+flowFamilyID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="497" parent="59" name="FK_flowengine_operating_message_flowfamilies_1">
+      <columns>messageID</columns>
+      <ref-key>~.flowengine_operating_messages.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="498" parent="59" name="FK_flowengine_operating_message_flowfamilies_2">
+      <columns>flowFamilyID</columns>
+      <ref-key>~.flowengine_flow_families.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="499" parent="60" name="messageID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="500" parent="60" name="message">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="501" parent="60" name="startTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="502" parent="60" name="endTime">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="503" parent="60" name="disableFlows">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1) unsigned|0</data-type>
+    </column>
+    <column id="504" parent="60" name="global">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1) unsigned|0</data-type>
+    </column>
+    <column id="505" parent="60" name="posted">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="506" parent="60" name="poster">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="507" parent="60" name="updated">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="508" parent="60" name="editor">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="509" parent="60" name="PRIMARY">
+      <columns>messageID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="510" parent="61" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="511" parent="61" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="512" parent="61" name="sortIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="513" parent="61" name="defaultQueryState">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="514" parent="61" name="stepID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="515" parent="61" name="queryTypeID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="516" parent="61" name="exported">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="517" parent="61" name="xsdElementName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="518" parent="61" name="FK_flowengine_query_descriptors_1">
+      <columns>stepID</columns>
+      <desc-columns />
+    </index>
+    <key id="519" parent="61" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="520" parent="61" name="FK_flowengine_query_descriptors_1">
+      <columns>stepID</columns>
+      <ref-key>~.flowengine_steps.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="521" parent="62" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="522" parent="62" name="queryState">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="523" parent="62" name="populated">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="524" parent="62" name="flowInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="525" parent="62" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="526" parent="62" name="FK_flowengine_query_instance_descriptors_1">
+      <columns>flowInstanceID</columns>
+      <desc-columns />
+    </index>
+    <index id="527" parent="62" name="FK_flowengine_query_instance_descriptors_2">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="528" parent="62" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="529" parent="62" name="FK_flowengine_query_instance_descriptors_1">
+      <columns>flowInstanceID</columns>
+      <ref-key>~.flowengine_flow_instances.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="530" parent="62" name="FK_flowengine_query_instance_descriptors_2">
+      <columns>queryID</columns>
+      <ref-key>~.flowengine_query_descriptors.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="531" parent="63" name="statusID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="532" parent="63" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="533" parent="63" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="534" parent="63" name="managingTime">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="535" parent="63" name="isUserMutable">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="536" parent="63" name="isUserDeletable">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="537" parent="63" name="isAdminMutable">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="538" parent="63" name="isAdminDeletable">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="539" parent="63" name="contentType">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <key id="540" parent="63" name="PRIMARY">
+      <columns>statusID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="541" parent="64" name="stepID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="542" parent="64" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="543" parent="64" name="sortIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="544" parent="64" name="flowID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="545" parent="64" name="FK_flowengine_steps_1">
+      <columns>flowID</columns>
+      <desc-columns />
+    </index>
+    <key id="546" parent="64" name="PRIMARY">
+      <columns>stepID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="547" parent="64" name="FK_flowengine_steps_1">
+      <columns>flowID</columns>
+      <ref-key>~.flowengine_flows.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="548" parent="65" name="textTagID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="549" parent="65" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="550" parent="65" name="description">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="551" parent="65" name="defaultValue">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="552" parent="65" name="type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <index id="553" parent="65" name="Index_2">
+      <columns>name</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="554" parent="65" name="PRIMARY">
+      <columns>textTagID</columns>
+      <primary>1</primary>
+    </key>
+    <key id="555" parent="65" name="Index_2">
+      <columns>name</columns>
+      <underlying-index>Index_2</underlying-index>
+    </key>
+    <column id="556" parent="66" name="organizationID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="557" parent="66" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="558" parent="66" name="organizationNumber">
+      <mandatory>1</mandatory>
+      <data-type>varchar(16)|0</data-type>
+    </column>
+    <column id="559" parent="66" name="address">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="560" parent="66" name="zipCode">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="561" parent="66" name="postalAddress">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="562" parent="66" name="firstname">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="563" parent="66" name="lastname">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="564" parent="66" name="phone">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="565" parent="66" name="mobilePhone">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="566" parent="66" name="email">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="567" parent="66" name="contactBySMS">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1) unsigned|0</data-type>
+    </column>
+    <column id="568" parent="66" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="569" parent="66" name="PRIMARY">
+      <columns>organizationID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="570" parent="67" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="571" parent="67" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="572" parent="67" name="minChecked">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="573" parent="67" name="maxChecked">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="574" parent="67" name="freeTextAlternative">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="575" parent="67" name="helpText">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="576" parent="67" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="577" parent="68" name="alternativeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="578" parent="68" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="579" parent="68" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="580" parent="68" name="sortIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="581" parent="68" name="xsdElementName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="582" parent="68" name="exported">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <index id="583" parent="68" name="FK_ivis_checkbox_query_alternatives_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="584" parent="68" name="PRIMARY">
+      <columns>alternativeID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="585" parent="68" name="FK_ivis_checkbox_query_alternatives_1">
+      <columns>queryID</columns>
+      <ref-key>~.ivis_checkbox_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="586" parent="69" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="587" parent="69" name="alternativeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="588" parent="69" name="FK_checkbox_query_instance_alternatives_2">
+      <columns>alternativeID</columns>
+      <desc-columns />
+    </index>
+    <key id="589" parent="69" name="PRIMARY">
+      <columns>queryInstanceID
+alternativeID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="590" parent="69" name="ivis_checkbox_query_instance_alternatives_ibfk_1">
+      <columns>queryInstanceID</columns>
+      <ref-key>~.ivis_checkbox_query_instances.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="591" parent="69" name="ivis_checkbox_query_instance_alternatives_ibfk_2">
+      <columns>alternativeID</columns>
+      <ref-key>~.ivis_checkbox_query_alternatives.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="592" parent="70" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="593" parent="70" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="594" parent="70" name="freeTextAlternativeValue">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="595" parent="70" name="minChecked">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="596" parent="70" name="maxChecked">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="597" parent="70" name="FK_ivis_checkbox_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="598" parent="70" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="599" parent="70" name="FK_ivis_checkbox_query_instances_1">
+      <columns>queryID</columns>
+      <ref-key>~.ivis_checkbox_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="600" parent="71" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="601" parent="71" name="shortDescription">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="602" parent="71" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="603" parent="71" name="helpText">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="604" parent="71" name="freeTextAlternative">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="605" parent="71" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="606" parent="72" name="alternativeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="607" parent="72" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="608" parent="72" name="sortIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="609" parent="72" name="xsdElementName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="610" parent="72" name="exported">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="611" parent="72" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="612" parent="72" name="FK_ivis_drop_down_query_alternatives_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="613" parent="72" name="PRIMARY">
+      <columns>alternativeID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="614" parent="72" name="FK_ivis_drop_down_query_alternatives_1">
+      <columns>queryID</columns>
+      <ref-key>~.ivis_drop_down_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="615" parent="73" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="616" parent="73" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="617" parent="73" name="alternativeID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="618" parent="73" name="freeTextAlternativeValue">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="619" parent="73" name="FK_ivis_drop_down_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <index id="620" parent="73" name="FK_ivis_drop_down_query_instances_2">
+      <columns>alternativeID</columns>
+      <desc-columns />
+    </index>
+    <key id="621" parent="73" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="622" parent="73" name="FK_ivis_drop_down_query_instances_1">
+      <columns>queryID</columns>
+      <ref-key>~.ivis_drop_down_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="623" parent="73" name="FK_ivis_drop_down_query_instances_2">
+      <columns>alternativeID</columns>
+      <ref-key>~.ivis_drop_down_query_alternatives.PRIMARY</ref-key>
+      <cascade-update-rule>set_null</cascade-update-rule>
+      <cascade-delete-rule>set_null</cascade-delete-rule>
+    </foreign-key>
+    <column id="624" parent="74" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="625" parent="74" name="description">
+      <data-type>longtext|0</data-type>
+    </column>
+    <column id="626" parent="74" name="helpText">
+      <data-type>longtext|0</data-type>
+    </column>
+    <column id="627" parent="74" name="layout">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <key id="628" parent="74" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="629" parent="75" name="textFieldValueID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="630" parent="75" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="631" parent="75" name="textFieldID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="632" parent="75" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="633" parent="75" name="FK_ivis_label_field_query_instance_values_1">
+      <columns>queryInstanceID</columns>
+      <desc-columns />
+    </index>
+    <index id="634" parent="75" name="FK_ivis_label_field_query_instance_values_2">
+      <columns>textFieldID</columns>
+      <desc-columns />
+    </index>
+    <key id="635" parent="75" name="PRIMARY">
+      <columns>textFieldValueID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="636" parent="75" name="ivis_label_field_query_instance_values_ibfk_1">
+      <columns>queryInstanceID</columns>
+      <ref-key>~.ivis_label_field_query_instances.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="637" parent="75" name="ivis_label_field_query_instance_values_ibfk_2">
+      <columns>textFieldID</columns>
+      <ref-key>~.ivis_label_fields.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="638" parent="76" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="639" parent="76" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="640" parent="76" name="FK_ivis_label_field_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="641" parent="76" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="642" parent="76" name="ivis_label_field_query_instances_ibfk_1">
+      <columns>queryID</columns>
+      <ref-key>~.ivis_label_field_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="643" parent="77" name="textFieldID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="644" parent="77" name="label">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="645" parent="77" name="required">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="646" parent="77" name="width">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="647" parent="77" name="sortIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="648" parent="77" name="formatValidator">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="649" parent="77" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="650" parent="77" name="maxContentLength">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="651" parent="77" name="invalidFormatMessage">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="652" parent="77" name="setAsAttribute">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="653" parent="77" name="attributeName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="654" parent="77" name="xsdElementName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="655" parent="77" name="exported">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="656" parent="77" name="dependsOn">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="657" parent="77" name="dependencySourceName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="658" parent="77" name="dependencyFieldName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="659" parent="77" name="FK_ivis_ivis_label_fields_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <index id="660" parent="77" name="FK_ivis_label_fields_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="661" parent="77" name="PRIMARY">
+      <columns>textFieldID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="662" parent="77" name="ivis_label_fields_ibfk_1">
+      <columns>queryID</columns>
+      <ref-key>~.ivis_label_field_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="663" parent="78" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="664" parent="78" name="description">
+      <data-type>longtext|0</data-type>
+    </column>
+    <column id="665" parent="78" name="freeTextAlternative">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="666" parent="78" name="helpText">
+      <data-type>longtext|0</data-type>
+    </column>
+    <key id="667" parent="78" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="668" parent="79" name="alternativeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="669" parent="79" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="670" parent="79" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="671" parent="79" name="sortIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="672" parent="79" name="xsdElementName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="673" parent="79" name="exported">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <index id="674" parent="79" name="FK_ivis_radio_button_query_alternatives_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="675" parent="79" name="PRIMARY">
+      <columns>alternativeID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="676" parent="79" name="FK_ivis_radio_button_query_alternatives_1">
+      <columns>queryID</columns>
+      <ref-key>~.ivis_radio_button_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="677" parent="80" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="678" parent="80" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="679" parent="80" name="alternativeID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="680" parent="80" name="freeTextAlternativeValue">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="681" parent="80" name="FK_ivis_radio_button_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <index id="682" parent="80" name="FK_ivis_radio_button_query_instances_2">
+      <columns>alternativeID</columns>
+      <desc-columns />
+    </index>
+    <key id="683" parent="80" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="684" parent="80" name="FK_ivis_radio_button_query_instances_1">
+      <columns>queryID</columns>
+      <ref-key>~.ivis_radio_button_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="685" parent="80" name="FK_ivis_radio_button_query_instances_2">
+      <columns>alternativeID</columns>
+      <ref-key>~.ivis_radio_button_query_alternatives.PRIMARY</ref-key>
+      <cascade-update-rule>set_null</cascade-update-rule>
+      <cascade-delete-rule>set_null</cascade-delete-rule>
+    </foreign-key>
+    <column id="686" parent="81" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="687" parent="81" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="688" parent="81" name="helpText">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="689" parent="81" name="maxLength">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="690" parent="81" name="dependsOn">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="691" parent="81" name="dependencySourceName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="692" parent="81" name="dependencyFieldName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="693" parent="81" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="694" parent="82" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="695" parent="82" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="696" parent="82" name="value">
+      <data-type>text|0</data-type>
+    </column>
+    <index id="697" parent="82" name="FK_ivis_text_area_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="698" parent="82" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="699" parent="82" name="ivis_text_area_query_instances_ibfk_1">
+      <columns>queryID</columns>
+      <ref-key>~.ivis_text_area_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="700" parent="83" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="701" parent="83" name="description">
+      <data-type>longtext|0</data-type>
+    </column>
+    <column id="702" parent="83" name="helpText">
+      <data-type>longtext|0</data-type>
+    </column>
+    <column id="703" parent="83" name="layout">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <key id="704" parent="83" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="705" parent="84" name="textFieldValueID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="706" parent="84" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="707" parent="84" name="textFieldID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="708" parent="84" name="VALUE">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="709" parent="84" name="FK_ivis_text_field_query_instance_values_1">
+      <columns>queryInstanceID</columns>
+      <desc-columns />
+    </index>
+    <index id="710" parent="84" name="FK_ivis_text_field_query_instance_values_2">
+      <columns>textFieldID</columns>
+      <desc-columns />
+    </index>
+    <key id="711" parent="84" name="PRIMARY">
+      <columns>textFieldValueID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="712" parent="84" name="ivis_text_field_query_instance_values_ibfk_1">
+      <columns>queryInstanceID</columns>
+      <ref-key>~.ivis_text_field_query_instances.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="713" parent="84" name="ivis_text_field_query_instance_values_ibfk_2">
+      <columns>textFieldID</columns>
+      <ref-key>~.ivis_text_fields.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="714" parent="85" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="715" parent="85" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="716" parent="85" name="FK_ivis_text_field_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="717" parent="85" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="718" parent="85" name="ivis_text_field_query_instances_ibfk_1">
+      <columns>queryID</columns>
+      <ref-key>~.ivis_text_field_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="719" parent="86" name="textFieldID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="720" parent="86" name="label">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="721" parent="86" name="required">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="722" parent="86" name="width">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="723" parent="86" name="sortIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="724" parent="86" name="formatValidator">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="725" parent="86" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="726" parent="86" name="maxContentLength">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="727" parent="86" name="invalidFormatMessage">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="728" parent="86" name="setAsAttribute">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+    </column>
+    <column id="729" parent="86" name="attributeName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="730" parent="86" name="xsdElementName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="731" parent="86" name="exported">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="732" parent="86" name="dependsOn">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(4)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="733" parent="86" name="dependencySourceName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="734" parent="86" name="dependencyFieldName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="735" parent="86" name="FK_ivis_ivis_text_fields_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <index id="736" parent="86" name="FK_ivis_text_fields_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="737" parent="86" name="PRIMARY">
+      <columns>textFieldID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="738" parent="86" name="ivis_text_fields_ibfk_1">
+      <columns>queryID</columns>
+      <ref-key>~.ivis_text_field_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="739" parent="87" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="740" parent="87" name="shortDescription">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="741" parent="87" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="742" parent="87" name="helpText">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="743" parent="87" name="entityClassname">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="744" parent="87" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="745" parent="88" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="746" parent="88" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="747" parent="88" name="alternativeID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="748" parent="88" name="alternativeRepresentation">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="749" parent="88" name="alternative">
+      <data-type>longtext|0</data-type>
+    </column>
+    <index id="750" parent="88" name="FK_linked_drop_down_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="751" parent="88" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="752" parent="88" name="FK_linked_drop_down_query_instances_1">
+      <columns>queryID</columns>
+      <ref-key>~.linked_drop_down_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="753" parent="89" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="754" parent="89" name="alias">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="755" parent="89" name="listIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="756" parent="89" name="PRIMARY">
+      <columns>moduleID
+alias</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="757" parent="89" name="FK_backgroundmodulealiases_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_background_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="758" parent="90" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="759" parent="90" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="760" parent="90" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(4096)|0</data-type>
+    </column>
+    <key id="761" parent="90" name="PRIMARY">
+      <columns>moduleID
+name</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="762" parent="90" name="FK_openhierarchy_background_module_attributes_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_background_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="763" parent="91" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="764" parent="91" name="groupID">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <index id="765" parent="91" name="FK_backgroundmodulegroups_2">
+      <columns>groupID</columns>
+      <desc-columns />
+    </index>
+    <key id="766" parent="91" name="PRIMARY">
+      <columns>moduleID
+groupID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="767" parent="91" name="FK_backgroundmodulegroups_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_background_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="768" parent="92" name="counter">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="769" parent="92" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="770" parent="92" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="771" parent="92" name="value">
+      <mandatory>1</mandatory>
+      <data-type>mediumtext|0</data-type>
+    </column>
+    <index id="772" parent="92" name="FK_backgroundmodulesettings_1">
+      <columns>moduleID</columns>
+      <desc-columns />
+    </index>
+    <key id="773" parent="92" name="PRIMARY">
+      <columns>counter</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="774" parent="92" name="FK_backgroundmodulesettings_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_background_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="775" parent="93" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="776" parent="93" name="slot">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="777" parent="93" name="PRIMARY">
+      <columns>moduleID
+slot</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="778" parent="93" name="FK_backgroundmoduleslots_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_background_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="779" parent="94" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="780" parent="94" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="781" parent="94" name="PRIMARY">
+      <columns>moduleID
+userID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="782" parent="94" name="FK_backgroundmoduleusers_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_background_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="783" parent="95" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="784" parent="95" name="classname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="785" parent="95" name="name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="786" parent="95" name="xslPath">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="787" parent="95" name="xslPathType">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="788" parent="95" name="anonymousAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="789" parent="95" name="userAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="790" parent="95" name="adminAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="791" parent="95" name="enabled">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="792" parent="95" name="sectionID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="793" parent="95" name="dataSourceID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="794" parent="95" name="staticContentPackage">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="795" parent="95" name="priority">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="796" parent="95" name="FK_backgroundmodules_1">
+      <columns>sectionID</columns>
+      <desc-columns />
+    </index>
+    <index id="797" parent="95" name="FK_backgroundmodules_2">
+      <columns>dataSourceID</columns>
+      <desc-columns />
+    </index>
+    <key id="798" parent="95" name="PRIMARY">
+      <columns>moduleID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="799" parent="95" name="FK_backgroundmodules_1">
+      <columns>sectionID</columns>
+      <ref-key>~.openhierarchy_sections.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="800" parent="95" name="FK_backgroundmodules_2">
+      <columns>dataSourceID</columns>
+      <ref-key>~.openhierarchy_data_sources.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>set_null</cascade-delete-rule>
+    </foreign-key>
+    <column id="801" parent="96" name="dataSourceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="802" parent="96" name="url">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="803" parent="96" name="type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="804" parent="96" name="enabled">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="805" parent="96" name="driver">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="806" parent="96" name="username">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="807" parent="96" name="password">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="808" parent="96" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="809" parent="96" name="logAbandoned">
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="810" parent="96" name="removeAbandoned">
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="811" parent="96" name="removeTimeout">
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>'30'</default-expression>
+    </column>
+    <column id="812" parent="96" name="testOnBorrow">
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="813" parent="96" name="validationQuery">
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>'SELECT 1'</default-expression>
+    </column>
+    <column id="814" parent="96" name="maxActive">
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>'30'</default-expression>
+    </column>
+    <column id="815" parent="96" name="maxIdle">
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>'8'</default-expression>
+    </column>
+    <column id="816" parent="96" name="minIdle">
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="817" parent="96" name="maxWait">
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="818" parent="96" name="defaultCatalog">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="819" parent="96" name="PRIMARY">
+      <columns>dataSourceID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="820" parent="97" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="821" parent="97" name="alias">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="822" parent="97" name="listIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="823" parent="97" name="PRIMARY">
+      <columns>moduleID
+alias</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="824" parent="97" name="FK_filtermodulealiases_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_filter_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="825" parent="98" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="826" parent="98" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="827" parent="98" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(4096)|0</data-type>
+    </column>
+    <key id="828" parent="98" name="PRIMARY">
+      <columns>moduleID
+name</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="829" parent="98" name="FK_openhierarchy_filter_module_attributes_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_filter_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="830" parent="99" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="831" parent="99" name="groupID">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <index id="832" parent="99" name="FK_filtermodulegroups_2">
+      <columns>groupID</columns>
+      <desc-columns />
+    </index>
+    <key id="833" parent="99" name="PRIMARY">
+      <columns>moduleID
+groupID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="834" parent="99" name="FK_filtermodulegroups_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_filter_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="835" parent="100" name="counter">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="836" parent="100" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="837" parent="100" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="838" parent="100" name="value">
+      <mandatory>1</mandatory>
+      <data-type>mediumtext|0</data-type>
+    </column>
+    <index id="839" parent="100" name="FK_filtermodulesettings_1">
+      <columns>moduleID</columns>
+      <desc-columns />
+    </index>
+    <key id="840" parent="100" name="PRIMARY">
+      <columns>counter</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="841" parent="100" name="FK_filtermodulesettings_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_filter_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="842" parent="101" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="843" parent="101" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="844" parent="101" name="PRIMARY">
+      <columns>moduleID
+userID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="845" parent="101" name="FK_filtermoduleusers_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_filter_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="846" parent="102" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="847" parent="102" name="classname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="848" parent="102" name="name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="849" parent="102" name="anonymousAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="850" parent="102" name="userAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="851" parent="102" name="adminAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="852" parent="102" name="enabled">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="853" parent="102" name="dataSourceID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="854" parent="102" name="priority">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="855" parent="102" name="FK_filtermodules_1">
+      <columns>dataSourceID</columns>
+      <desc-columns />
+    </index>
+    <key id="856" parent="102" name="PRIMARY">
+      <columns>moduleID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="857" parent="102" name="FK_filtermodules_1">
+      <columns>dataSourceID</columns>
+      <ref-key>~.openhierarchy_data_sources.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>set_null</cascade-delete-rule>
+    </foreign-key>
+    <column id="858" parent="103" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="859" parent="103" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="860" parent="103" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(4096)|0</data-type>
+    </column>
+    <key id="861" parent="103" name="PRIMARY">
+      <columns>moduleID
+name</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="862" parent="103" name="FK_openhierarchy_foreground_module_attributes_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_foreground_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="863" parent="104" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="864" parent="104" name="groupID">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <index id="865" parent="104" name="FK_modulegroups_2">
+      <columns>groupID</columns>
+      <desc-columns />
+    </index>
+    <key id="866" parent="104" name="PRIMARY">
+      <columns>moduleID
+groupID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="867" parent="104" name="FK_modulegroups_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_foreground_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="868" parent="105" name="counter">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="869" parent="105" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="870" parent="105" name="id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="871" parent="105" name="value">
+      <mandatory>1</mandatory>
+      <data-type>mediumtext|0</data-type>
+    </column>
+    <index id="872" parent="105" name="FK_modulesettings_1">
+      <columns>moduleID</columns>
+      <desc-columns />
+    </index>
+    <key id="873" parent="105" name="PRIMARY">
+      <columns>counter</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="874" parent="105" name="FK_modulesettings_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_foreground_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="875" parent="106" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="876" parent="106" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="877" parent="106" name="PRIMARY">
+      <columns>moduleID
+userID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="878" parent="106" name="FK_moduleusers_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_foreground_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="879" parent="107" name="moduleID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="880" parent="107" name="classname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="881" parent="107" name="name">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="882" parent="107" name="alias">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="883" parent="107" name="description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="884" parent="107" name="xslPath">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="885" parent="107" name="xslPathType">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="886" parent="107" name="anonymousAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="887" parent="107" name="userAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="888" parent="107" name="adminAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="889" parent="107" name="enabled">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="890" parent="107" name="visibleInMenu">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="891" parent="107" name="sectionID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="892" parent="107" name="dataSourceID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="893" parent="107" name="staticContentPackage">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="894" parent="107" name="requiredProtocol">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <index id="895" parent="107" name="FK_modules_1">
+      <columns>sectionID</columns>
+      <desc-columns />
+    </index>
+    <index id="896" parent="107" name="FK_modules_2">
+      <columns>dataSourceID</columns>
+      <desc-columns />
+    </index>
+    <index id="897" parent="107" name="Index_3">
+      <columns>sectionID
+alias</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="898" parent="107" name="PRIMARY">
+      <columns>moduleID</columns>
+      <primary>1</primary>
+    </key>
+    <key id="899" parent="107" name="Index_3">
+      <columns>sectionID
+alias</columns>
+      <underlying-index>Index_3</underlying-index>
+    </key>
+    <foreign-key id="900" parent="107" name="FK_modules_1">
+      <columns>sectionID</columns>
+      <ref-key>~.openhierarchy_sections.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="901" parent="107" name="FK_modules_2">
+      <columns>dataSourceID</columns>
+      <ref-key>~.openhierarchy_data_sources.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>set_null</cascade-delete-rule>
+    </foreign-key>
+    <column id="902" parent="108" name="menuIndexID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="903" parent="108" name="sectionID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="904" parent="108" name="menuIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="905" parent="108" name="moduleID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="906" parent="108" name="uniqueID">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="907" parent="108" name="subSectionID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="908" parent="108" name="menuItemID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="909" parent="108" name="FK_menuindex_3">
+      <columns>subSectionID</columns>
+      <desc-columns />
+    </index>
+    <index id="910" parent="108" name="FK_menuindex_4">
+      <columns>menuItemID</columns>
+      <desc-columns />
+    </index>
+    <index id="911" parent="108" name="Index_5">
+      <columns>sectionID
+subSectionID</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <index id="912" parent="108" name="UniqueID / ModuleID">
+      <columns>moduleID
+uniqueID
+sectionID</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="913" parent="108" name="PRIMARY">
+      <columns>menuIndexID</columns>
+      <primary>1</primary>
+    </key>
+    <key id="914" parent="108" name="Index_5">
+      <columns>sectionID
+subSectionID</columns>
+      <underlying-index>Index_5</underlying-index>
+    </key>
+    <key id="915" parent="108" name="UniqueID / ModuleID">
+      <columns>moduleID
+uniqueID
+sectionID</columns>
+      <underlying-index>UniqueID\u0020/\u0020ModuleID</underlying-index>
+    </key>
+    <foreign-key id="916" parent="108" name="FK_menuindex_2">
+      <columns>sectionID</columns>
+      <ref-key>~.openhierarchy_sections.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="917" parent="108" name="FK_menuindex_1">
+      <columns>moduleID</columns>
+      <ref-key>~.openhierarchy_foreground_modules.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="918" parent="108" name="FK_menuindex_3">
+      <columns>subSectionID</columns>
+      <ref-key>~.openhierarchy_sections.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="919" parent="108" name="FK_menuindex_4">
+      <columns>menuItemID</columns>
+      <ref-key>~.openhierarchy_virtual_menu_items.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="920" parent="109" name="sectionID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="921" parent="109" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="922" parent="109" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(4096)|0</data-type>
+    </column>
+    <key id="923" parent="109" name="PRIMARY">
+      <columns>sectionID
+name</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="924" parent="109" name="FK_openhierarchy_section_attributes_1">
+      <columns>sectionID</columns>
+      <ref-key>~.openhierarchy_sections.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="925" parent="110" name="sectionID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="926" parent="110" name="groupID">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <key id="927" parent="110" name="PRIMARY">
+      <columns>sectionID
+groupID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="928" parent="110" name="FK_sectiongroups_1">
+      <columns>sectionID</columns>
+      <ref-key>~.openhierarchy_sections.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="929" parent="111" name="sectionID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="930" parent="111" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="931" parent="111" name="PRIMARY">
+      <columns>sectionID
+userID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="932" parent="111" name="FK_sectionusers_1">
+      <columns>sectionID</columns>
+      <ref-key>~.openhierarchy_sections.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="933" parent="112" name="sectionID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="934" parent="112" name="parentSectionID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="935" parent="112" name="alias">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="936" parent="112" name="enabled">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="937" parent="112" name="anonymousAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="938" parent="112" name="userAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="939" parent="112" name="adminAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="940" parent="112" name="visibleInMenu">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="941" parent="112" name="breadCrumb">
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'1'</default-expression>
+    </column>
+    <column id="942" parent="112" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="943" parent="112" name="description">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="944" parent="112" name="anonymousDefaultURI">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="945" parent="112" name="userDefaultURI">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="946" parent="112" name="requiredProtocol">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <index id="947" parent="112" name="Index_2">
+      <columns>parentSectionID
+alias</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="948" parent="112" name="PRIMARY">
+      <columns>sectionID</columns>
+      <primary>1</primary>
+    </key>
+    <key id="949" parent="112" name="Index_2">
+      <columns>parentSectionID
+alias</columns>
+      <underlying-index>Index_2</underlying-index>
+    </key>
+    <foreign-key id="950" parent="112" name="FK_sections_1">
+      <columns>parentSectionID</columns>
+      <ref-key>~.checkbox_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="951" parent="113" name="menuItemID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="952" parent="113" name="groupID">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <key id="953" parent="113" name="PRIMARY">
+      <columns>menuItemID
+groupID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="954" parent="113" name="FK_virtualmenuitemgroups_1">
+      <columns>menuItemID</columns>
+      <ref-key>~.openhierarchy_virtual_menu_items.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="955" parent="114" name="menuItemID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="956" parent="114" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="957" parent="114" name="PRIMARY">
+      <columns>menuItemID
+userID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="958" parent="114" name="FK_virtualmenuitemusers_1">
+      <columns>menuItemID</columns>
+      <ref-key>~.openhierarchy_virtual_menu_items.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="959" parent="115" name="menuItemID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="960" parent="115" name="itemtype">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="961" parent="115" name="name">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="962" parent="115" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="963" parent="115" name="url">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="964" parent="115" name="anonymousAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="965" parent="115" name="userAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="966" parent="115" name="adminAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="967" parent="115" name="sectionID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <index id="968" parent="115" name="FK_menuadmin_1">
+      <columns>sectionID</columns>
+      <desc-columns />
+    </index>
+    <key id="969" parent="115" name="PRIMARY">
+      <columns>menuItemID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="970" parent="115" name="FK_virtualmenuitems_1">
+      <columns>sectionID</columns>
+      <ref-key>~.openhierarchy_sections.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="971" parent="116" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="972" parent="116" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="973" parent="116" name="helpText">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="974" parent="116" name="allowSMS">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1) unsigned|0</data-type>
+    </column>
+    <column id="975" parent="116" name="requireAddress">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <key id="976" parent="116" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="977" parent="117" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="978" parent="117" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="979" parent="117" name="name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="980" parent="117" name="organizationNumber">
+      <data-type>varchar(16)|0</data-type>
+    </column>
+    <column id="981" parent="117" name="address">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="982" parent="117" name="zipCode">
+      <data-type>varchar(10)|0</data-type>
+    </column>
+    <column id="983" parent="117" name="postalAddress">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="984" parent="117" name="firstname">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="985" parent="117" name="lastname">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="986" parent="117" name="phone">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="987" parent="117" name="email">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="988" parent="117" name="mobilePhone">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="989" parent="117" name="contactBySMS">
+      <data-type>tinyint(1) unsigned|0</data-type>
+    </column>
+    <column id="990" parent="117" name="organizationID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="991" parent="117" name="persistOrganization">
+      <data-type>tinyint(1) unsigned|0</data-type>
+    </column>
+    <index id="992" parent="117" name="FK_organization_detail_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="993" parent="117" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="994" parent="117" name="FK_organization_detail_query_instances_1">
+      <columns>queryID</columns>
+      <ref-key>~.organization_detail_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="995" parent="118" name="pageID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="996" parent="118" name="groupID">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <key id="997" parent="118" name="PRIMARY">
+      <columns>pageID
+groupID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="998" parent="118" name="FK_pagegroups_1">
+      <columns>pageID</columns>
+      <ref-key>~.pages.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="999" parent="119" name="pageID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1000" parent="119" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="1001" parent="119" name="PRIMARY">
+      <columns>pageID
+userID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1002" parent="119" name="FK_pageusers_1">
+      <columns>pageID</columns>
+      <ref-key>~.pages.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="1003" parent="120" name="pageID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1004" parent="120" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="1005" parent="120" name="description">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="1006" parent="120" name="text">
+      <mandatory>1</mandatory>
+      <data-type>mediumtext|0</data-type>
+    </column>
+    <column id="1007" parent="120" name="enabled">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="1008" parent="120" name="visibleInMenu">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="1009" parent="120" name="anonymousAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="1010" parent="120" name="userAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="1011" parent="120" name="adminAccess">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="1012" parent="120" name="sectionID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="1013" parent="120" name="alias">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="1014" parent="120" name="breadCrumb">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'1'</default-expression>
+    </column>
+    <index id="1015" parent="120" name="FK_pages_1">
+      <columns>sectionID</columns>
+      <desc-columns />
+    </index>
+    <index id="1016" parent="120" name="Index_3">
+      <columns>sectionID
+alias</columns>
+      <desc-columns />
+      <unique>1</unique>
+    </index>
+    <key id="1017" parent="120" name="PRIMARY">
+      <columns>pageID</columns>
+      <primary>1</primary>
+    </key>
+    <key id="1018" parent="120" name="Index_3">
+      <columns>sectionID
+alias</columns>
+      <underlying-index>Index_3</underlying-index>
+    </key>
+    <foreign-key id="1019" parent="120" name="FK_pages_1">
+      <columns>sectionID</columns>
+      <ref-key>~.openhierarchy_sections.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="1020" parent="121" name="evaluatorID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1021" parent="121" name="alternativeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="1022" parent="121" name="PRIMARY">
+      <columns>evaluatorID
+alternativeID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1023" parent="121" name="FK_query_state_evaluator_alternatives_1">
+      <columns>evaluatorID</columns>
+      <ref-key>~.query_state_evaluators.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="1024" parent="122" name="evaluatorID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1025" parent="122" name="selectionMode">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="1026" parent="122" name="queryState">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="1027" parent="122" name="doNotResetQueryState">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <key id="1028" parent="122" name="PRIMARY">
+      <columns>evaluatorID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1029" parent="123" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1030" parent="123" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1031" parent="123" name="freeTextAlternative">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1032" parent="123" name="helpText">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="1033" parent="123" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1034" parent="124" name="alternativeID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1035" parent="124" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1036" parent="124" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1037" parent="124" name="sortIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="1038" parent="124" name="FK_radio_button_query_alternatives_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="1039" parent="124" name="PRIMARY">
+      <columns>alternativeID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1040" parent="124" name="FK_radio_button_query_alternatives_1">
+      <columns>queryID</columns>
+      <ref-key>~.radio_button_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="1041" parent="125" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1042" parent="125" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1043" parent="125" name="alternativeID">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1044" parent="125" name="freeTextAlternativeValue">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="1045" parent="125" name="FK_radio_button_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <index id="1046" parent="125" name="FK_radio_button_query_instances_2">
+      <columns>alternativeID</columns>
+      <desc-columns />
+    </index>
+    <key id="1047" parent="125" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1048" parent="125" name="FK_radio_button_query_instances_1">
+      <columns>queryID</columns>
+      <ref-key>~.radio_button_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="1049" parent="125" name="FK_radio_button_query_instances_2">
+      <columns>alternativeID</columns>
+      <ref-key>~.radio_button_query_alternatives.PRIMARY</ref-key>
+      <cascade-update-rule>set_null</cascade-update-rule>
+      <cascade-delete-rule>set_null</cascade-delete-rule>
+    </foreign-key>
+    <column id="1050" parent="126" name="groupID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1051" parent="126" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1052" parent="126" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(4096)|0</data-type>
+    </column>
+    <key id="1053" parent="126" name="PRIMARY">
+      <columns>groupID
+name</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1054" parent="126" name="FK_simple_group_attributes_1">
+      <columns>groupID</columns>
+      <ref-key>~.simple_groups.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="1055" parent="127" name="groupID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1056" parent="127" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1057" parent="127" name="description">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1058" parent="127" name="enabled">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <key id="1059" parent="127" name="PRIMARY">
+      <columns>groupID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1060" parent="128" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1061" parent="128" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1062" parent="128" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(4096)|0</data-type>
+    </column>
+    <index id="1063" parent="128" name="Index_2">
+      <columns>name</columns>
+      <desc-columns />
+    </index>
+    <key id="1064" parent="128" name="PRIMARY">
+      <columns>userID
+name</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1065" parent="128" name="FK_simple_user_attributes_1">
+      <columns>userID</columns>
+      <ref-key>~.simple_users.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="1066" parent="129" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1067" parent="129" name="groupID">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <index id="1068" parent="129" name="FK_usergroups_2">
+      <columns>groupID</columns>
+      <desc-columns />
+    </index>
+    <key id="1069" parent="129" name="PRIMARY">
+      <columns>userID
+groupID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1070" parent="129" name="FK_usergroups_1">
+      <columns>userID</columns>
+      <ref-key>~.simple_users.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="1071" parent="130" name="userID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1072" parent="130" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="1073" parent="130" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="1074" parent="130" name="firstname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="1075" parent="130" name="lastname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="1076" parent="130" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>''</default-expression>
+    </column>
+    <column id="1077" parent="130" name="admin">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="1078" parent="130" name="enabled">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>'0'</default-expression>
+    </column>
+    <column id="1079" parent="130" name="added">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="1080" parent="130" name="lastlogin">
+      <data-type>timestamp|0</data-type>
+      <default-expression>'0000-00-00 00:00:00'</default-expression>
+    </column>
+    <column id="1081" parent="130" name="language">
+      <data-type>varchar(76)|0</data-type>
+    </column>
+    <column id="1082" parent="130" name="preferedDesign">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="1083" parent="130" name="PRIMARY">
+      <columns>userID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1084" parent="131" name="profileID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1085" parent="131" name="domain">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="1086" parent="131" name="PRIMARY">
+      <columns>profileID
+domain</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1087" parent="131" name="FK_site_profile_domains_1">
+      <columns>profileID</columns>
+      <ref-key>~.site_profiles.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="1088" parent="132" name="settingID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1089" parent="132" name="sortIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1090" parent="132" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(4096)|0</data-type>
+    </column>
+    <key id="1091" parent="132" name="PRIMARY">
+      <columns>settingID
+sortIndex</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1092" parent="133" name="settingID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1093" parent="133" name="sortIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1094" parent="133" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(4096)|0</data-type>
+    </column>
+    <column id="1095" parent="133" name="profileID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="1096" parent="133" name="FK_site_profile_settings_1">
+      <columns>profileID</columns>
+      <desc-columns />
+    </index>
+    <key id="1097" parent="133" name="PRIMARY">
+      <columns>settingID
+sortIndex
+profileID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1098" parent="133" name="FK_site_profile_settings_1">
+      <columns>profileID</columns>
+      <ref-key>~.site_profiles.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="1099" parent="134" name="profileID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1100" parent="134" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1101" parent="134" name="design">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="1102" parent="134" name="PRIMARY">
+      <columns>profileID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1103" parent="135" name="tableGroupName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1104" parent="135" name="version">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="1105" parent="135" name="PRIMARY">
+      <columns>tableGroupName</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1106" parent="136" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1107" parent="136" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1108" parent="136" name="helpText">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1109" parent="136" name="maxLength">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="1110" parent="136" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1111" parent="137" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1112" parent="137" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1113" parent="137" name="value">
+      <data-type>text|0</data-type>
+    </column>
+    <index id="1114" parent="137" name="FK_text_area_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="1115" parent="137" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1116" parent="137" name="FK_text_area_query_instances_1">
+      <columns>queryID</columns>
+      <ref-key>~.text_area_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="1117" parent="138" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1118" parent="138" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1119" parent="138" name="helpText">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="1120" parent="138" name="layout">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <key id="1121" parent="138" name="PRIMARY">
+      <columns>queryID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="1122" parent="139" name="textFieldValueID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1123" parent="139" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1124" parent="139" name="textFieldID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1125" parent="139" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="1126" parent="139" name="FK_text_field_query_instance_values_1">
+      <columns>queryInstanceID</columns>
+      <desc-columns />
+    </index>
+    <index id="1127" parent="139" name="FK_text_field_query_instance_values_2">
+      <columns>textFieldID</columns>
+      <desc-columns />
+    </index>
+    <key id="1128" parent="139" name="PRIMARY">
+      <columns>textFieldValueID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1129" parent="139" name="FK_text_field_query_instance_values_1">
+      <columns>queryInstanceID</columns>
+      <ref-key>~.text_field_query_instances.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="1130" parent="139" name="FK_text_field_query_instance_values_2">
+      <columns>textFieldID</columns>
+      <ref-key>~.text_fields.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="1131" parent="140" name="queryInstanceID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1132" parent="140" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="1133" parent="140" name="FK_text_field_query_instances_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="1134" parent="140" name="PRIMARY">
+      <columns>queryInstanceID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1135" parent="140" name="FK_text_field_query_instances_1">
+      <columns>queryID</columns>
+      <ref-key>~.text_field_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+    <column id="1136" parent="141" name="textFieldID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="1137" parent="141" name="label">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1138" parent="141" name="required">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="1139" parent="141" name="width">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1140" parent="141" name="sortIndex">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1141" parent="141" name="formatValidator">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1142" parent="141" name="queryID">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1143" parent="141" name="maxContentLength">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="1144" parent="141" name="invalidFormatMessage">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="1145" parent="141" name="setAsAttribute">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+    </column>
+    <column id="1146" parent="141" name="attributeName">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="1147" parent="141" name="FK_text_fields_1">
+      <columns>queryID</columns>
+      <desc-columns />
+    </index>
+    <key id="1148" parent="141" name="PRIMARY">
+      <columns>textFieldID</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="1149" parent="141" name="FK_text_fields_1">
+      <columns>queryID</columns>
+      <ref-key>~.text_field_queries.PRIMARY</ref-key>
+      <cascade-update-rule>update</cascade-update-rule>
+      <cascade-delete-rule>delete</cascade-delete-rule>
+    </foreign-key>
+  </database-model>
+</dataSource>

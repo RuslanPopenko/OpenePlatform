@@ -27,10 +27,6 @@
           <element id="library" level="project" name="Maven: org.apache.commons:commons-compress:1.4.1" />
           <element id="library" level="project" name="Maven: org.tukaani:xz:1.0" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.5" />
-          <element id="library" level="project" name="Maven: org.apache.pdfbox:pdfbox:1.7.1" />
-          <element id="library" level="project" name="Maven: org.apache.pdfbox:fontbox:1.7.1" />
-          <element id="library" level="project" name="Maven: org.apache.pdfbox:jempbox:1.7.1" />
-          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
           <element id="library" level="project" name="Maven: org.bouncycastle:bcmail-jdk15:1.45" />
           <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15:1.45" />
           <element id="library" level="project" name="Maven: org.apache.poi:poi:3.8" />
@@ -118,6 +114,22 @@
           <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.3.1" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.3" />
+          <element id="archive" name="flow-instance-pdf-generator-1.2.1.jar">
+            <element id="module-output" name="flow-instance-pdf-generator" />
+          </element>
+          <element id="library" level="project" name="Maven: org.apache.pdfbox:pdfbox:1.8.12" />
+          <element id="library" level="project" name="Maven: org.apache.pdfbox:fontbox:1.8.12" />
+          <element id="library" level="project" name="Maven: org.apache.pdfbox:jempbox:1.8.12" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+          <element id="library" level="project" name="Maven: com.lowagie:itext:2.1.7" />
+          <element id="library" level="project" name="Maven: bouncycastle:bcmail-jdk14:138" />
+          <element id="library" level="project" name="Maven: bouncycastle:bcprov-jdk14:138" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bctsp-jdk14:1.38" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk14:1.38" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcmail-jdk14:1.38" />
+          <element id="library" level="project" name="Maven: org.xhtmlrenderer:flying-saucer-pdf:9.0.9" />
+          <element id="library" level="project" name="Maven: org.xhtmlrenderer:flying-saucer-core:9.0.9" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
         </element>
       </element>
       <element id="directory" name="META-INF">

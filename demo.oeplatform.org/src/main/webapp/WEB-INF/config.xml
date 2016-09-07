@@ -12,7 +12,7 @@
 	<BackgroundModuleXMLDebugFile>bgmodule_xmldebug.xml</BackgroundModuleXMLDebugFile>	
 	<CoreDAOFactory>se.unlogic.hierarchy.core.daos.implementations.mysql.MySQLCoreDAOFactory</CoreDAOFactory>
 	<DataSource>
-		<Url>jdbc:mysql://localhost:3306/db_open_platform</Url>
+		<Url>jdbc:mysql://localhost:3306/db_open_platform?characterEncoding=utf8</Url>
 		<Type>SystemManaged</Type>
 		<Driver>com.mysql.jdbc.Driver</Driver>
 		<Username>root</Username>

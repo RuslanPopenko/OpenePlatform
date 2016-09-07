@@ -25,6 +25,7 @@
         <module name="basemapquery" />
         <module name="cron4jutils" />
         <module name="demo.oeplatform.org" />
+        <module name="flow-instance-pdf-generator" />
         <module name="flowengine" />
         <module name="ivis-oeplatform-client" />
         <module name="search-lm-rmi" />
@@ -35,6 +36,7 @@
       <module name="basemapquery" target="1.6" />
       <module name="cron4jutils" target="1.6" />
       <module name="demo.oeplatform.org" target="1.8" />
+      <module name="flow-instance-pdf-generator" target="1.6" />
       <module name="flowengine" target="1.6" />
       <module name="ivis-oeplatform-client" target="1.8" />
       <module name="oeplatform" target="1.5" />
